@@ -44,7 +44,7 @@
 openssl s_client  -tls1_3  -connect keystore.dyndns.info:443 -groups P-256 -cipher DHE -ciphersuites  TLS_AES_128_CCM_SHA256 -no_ticket -psk 0102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F20
 
 Upon success your scree should display the following lines<br>
--CONNECTED(00000130)<br>
+_CONNECTED(00000130)<br>
 no peer certificate available<br>
 No client certificate CA names sent<br>
 Server Temp Key: ECDH, P-256, 256 bits<br>
@@ -54,8 +54,7 @@ Reused, TLSv1.3, Cipher is TLS_AES_128_CCM_SHA256<br>
 Secure Renegotiation IS NOT supported<br>
 No ALPN negotiated<br>
 Early data was not sent<br>
-Verify return code: 0 (ok)-<br>
-
+Verify return code: 0 (ok)_<br>
 
 ## A simple session
 
