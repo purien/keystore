@@ -9,7 +9,7 @@
 * On the client side, credentials are optionally stored in a Secure Element (access card)
 * Simple and highly secure architecture <br>
 -- Relies on TLS1.3 secure communication and Secure Elements <br>
-***
+
 # The concept
 * Blockchain keystore hosted in the Internet Trusted keystore running in a secure element 
 -- EAL6 <br>
@@ -19,9 +19,20 @@
 -- Signature generation <br>
 * Keystore App works in a TLS1.3 embedded server<br>
 -- TLS-SE:  TLS Secure Element<br>
--- https://tools.ietf.org/html/draft-urien-tls-se-01<br>
+-- https://tools.ietf.org/html/draft-urien-tls-se-02<br>
 * Remote Wallet works over a TLS1.3 client<br>
 -- Client credentials are (optionally)  stored and used in a secure element<br>
 -- TLS-IM: TLS Identity Module<br>
--- https://tools.ietf.org/html/draft-urien-tls-im-03<br>
-***
+-- https://tools.ietf.org/html/draft-urien-tls-im-04<br>
+
+# Why TLS1.3
+* State of art for communication security
+-- Several years of debates between security experts at IETF.<br>
+-- Privacy enforcement with Diffie-Hellman Exchange over Elliptic Curve (ECDHE)<br>
+-- Authenticated Encryption with Associated Data (AEAD)<br>
+-- Server and client authentication based on PKI or pre-shared-key (PSK)<br>
+* TLS-SE 1.0 works with AES-128-CCM cipher-suite, ECDHE (over SECP256k1), and 32 bytes PSK.
+* Next version will support PKI
+
+
+
