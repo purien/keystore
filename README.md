@@ -37,7 +37,7 @@
 # Keystore commands
 
 * A keystore command is a text line (ASCII) ended by CrLf (Carriage Return, Line Feed) or Lf 
-* The first character is the command identifier (?, c, X, g, p, r, t, v, b)
+* The first character is the command identifier (?, c, X, g, p, r, t, v, b, s)
 * The second and third character is the command index coded in hexadecimal <br>
 -- index: 00=>0, 01=1, 0A=>10, FF=>255 <br>
 -- The keystore supports four keys identfified by index 00, 01, 02, 03 <br>
