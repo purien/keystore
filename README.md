@@ -1,4 +1,4 @@
-# keystore
+# About the keystore
 
 * A simple cost effective solution to securely store&use blockchain private keys in the cloud<br>
 -- Cost effective, alternative to HSM <br> 
