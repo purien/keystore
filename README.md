@@ -57,7 +57,6 @@ Early data was not sent<br>
 Verify return code: 0 (ok)_<br>
 
 ## A simple session
-
 ?00             _(get version)_  <br>
 Ethertrust keystore 1.1          <br>
 ?01abcdef       _(echo abcdef)_  <br>
@@ -88,7 +87,7 @@ r03 _(get private key 3)_ <br>
 0000000000000000000000000000000000000000000000000000000000001234<br>
 ?02 _(disconnect)_<br>
 
-## Setting BIP32 seed and computing keys
+## Setting BIP32 seed and compute keys
 c03 _(clear key 3)_ <br>
 OK <br>
 t031234 _(set tree 3 secret seed)_ <br>
@@ -106,10 +105,26 @@ r03 _(get private key 3)_ <br>
 ## Generating BIP32 random secret seed
 c03 _(clear key 3)_ <br>
 OK <br>
-t03  _(gererate tree 3 secret seed)_ <br>
+t03  _(generate tree 3 secret seed)_ <br>
 OK <br>
 v03  _(get tree 3 secret seed)_ <br>
 139CF1FED85772090C9A9AEBECD4F3ABB549B0D5D6858F77D540A9B565A98FF1<br>
+?02 _(disconnect)_<br>
+
+## Generating BIP32 test vector
+see https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
+c03 _(clear key 3)_ <br>
+OK <br>
+t03000102030405060708090a0b0c0d0e0f _(set tree 3 secret seed)_ <br>
+OK <br>
+v03  _(get tree 3 secret seed)_ <br>
+000102030405060708090a0b0c0d0e0f <br>
+b0380000000  _(compute hardened key 0H for BIP tree 3)_ <br>
+p03  _(get public key 3)_ <br>
+045A784662A4A20A65BF6AAB9AE98A6C068A81C52E4B032C0FB5400C706CFCCC567F717885BE239DAADCE76B568958305183AD616FF74ED4DC219A74
+C26D35F839<br>
+r03 _(get private key 3)_ <br>
+EDB2E14F9EE77D26DD93B4ECEDE8D16ED408CE149B6CD80B0715A2D911A0AFEA <br>
 ?02 _(disconnect)_<br>
 
 ## Signing
