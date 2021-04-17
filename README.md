@@ -93,7 +93,7 @@ OK <br>
 t031234 _(set tree 3 secret seed)_ <br>
 OK <br>
 v03  _(get tree 3 secret seed)_ <br>
-1234
+1234 <br>
 b0380000001  _(compute hardened  key 1H for BIP tree 3)_ <br>
 p03  _(get public key 3)_ <br>
 0455CB37165F08D5E85D49DA700C083B8D9D7CB33EA7BEF0FE3455F632FE50DE743E4664A488C3D825F872135BF2F139C655B9E212394717D0A9F27E
