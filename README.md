@@ -44,7 +44,7 @@
 * Remaining characters (if any) represent the command payload <br>
 -- For ?01 echo command, the payload is a set of ASCII characters <br>
 -- For other commands the payload is a set of bytes encoded in hexadecimal format <br>
--- For BIP32, only hardened keys are supported. The path is expressed as a list of 32bits values, with th emost significant bit set to 1.<br>
+-- For BIP32, only hardened keys are supported. The path is expressed as a list of 32bits values, with the most significant bit set to 1.<br>
 
 ![keystore wi-fi board](https://github.com/purien/keystore/blob/main/keystore01.jpg)
 
