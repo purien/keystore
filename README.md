@@ -1,6 +1,6 @@
 # keystore
 
-** A simple cost effective solution to securely store&use blockchain private keys in the cloud**
+** A simple cost effective solution to securely store&use blockchain private keys in the cloud
 Cost effective, alternative to HSM
 Anywhere, anytime
 Secure and tamper proof
