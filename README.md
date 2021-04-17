@@ -43,7 +43,7 @@
 
 openssl s_client  -tls1_3  -connect keystore.dyndns.info:443 -groups P-256 -cipher DHE -ciphersuites  TLS_AES_128_CCM_SHA256 -no_ticket -psk 0102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F20
 
-Upon success your scree should display the following lines<br>
+Upon success your scree should display the following lines: <br><br>
 _CONNECTED(00000130)<br>
 no peer certificate available<br>
 No client certificate CA names sent<br>
@@ -64,7 +64,17 @@ Ethertrust keystore 1.0          <br>
 abcdef  <br>
 ?02             _(disconnect)_   <br>
 
-
+## Generating keys
+c03 _(clear key 3)_ <br>
+OK <br>
+g03 _(generate key 3)_ <br>
+OK <br>
+p03  _(get public key 3)_ <br>
+04E67689C83475EFB1C91B64F56BECD926FAE5CC81631EF98AFD4EF8AF310F64460CE0D3550BD6658ABD26EDA825859746C10F781354EC1C086161B4
+A808B1BD56 <br>
+r03 _(get private key 3)
+5E2A0AAD12FF24E638174AE9B17F45078C5C068F08F0479AAE9CB645DFBB4408
+?02 _(disconnect)_
 
 
 
