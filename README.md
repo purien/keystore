@@ -76,7 +76,7 @@ r03 _(get private key 3)_ <br>
 5E2A0AAD12FF24E638174AE9B17F45078C5C068F08F0479AAE9CB645DFBB4408<br>
 ?02 _(disconnect)_<br>
 
-# Setting a key
+## Setting a key
 c03 _(clear key 3)_ <br>
 OK <br>
 X031234 _(set private & public key 3)_ <br>
@@ -86,8 +86,9 @@ p03  _(get public key 3)_ <br>
 6B835024CD <br>
 r03 _(get private key 3)_ <br>
 0000000000000000000000000000000000000000000000000000000000001234<br>
+?02 _(disconnect)_<br>
 
-# Setting BIP32 seed and computing keys
+## Setting BIP32 seed and computing keys
 c03 _(clear key 3)_ <br>
 OK <br>
 t031234 _(set tree 3 secret seed)_ <br>
@@ -100,6 +101,13 @@ p03  _(get public key 3)_ <br>
 9DEA32146E <br>
 r03 _(get private key 3)_ <br>
 95DC50F1D52AC952B866B8AD9845F9E3EBB9DD8EDF49F8E7CC342469A8DA77C8 <br>
+?02 _(disconnect)_<br>
+
+## Signing
+s03abcd _(sign with key 3)_ <br>
+30440220604F3520C7112BA934B34D25DB03DD66851C84017A0216FE1DC876A4ED4F6C33022070B437A956D5D9D7B7EAEBDC122E52DC347218DA4884
+EF920AA44940D48BD92F <br>
+?02 _(disconnect)_<br>
 
 
 
