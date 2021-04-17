@@ -64,7 +64,7 @@ Ethertrust keystore 1.0          <br>
 abcdef  <br>
 ?02             _(disconnect)_   <br>
 
-## Generating keys
+## Generating a key
 c03 _(clear key 3)_ <br>
 OK <br>
 g03 _(generate key 3)_ <br>
@@ -72,9 +72,20 @@ OK <br>
 p03  _(get public key 3)_ <br>
 04E67689C83475EFB1C91B64F56BECD926FAE5CC81631EF98AFD4EF8AF310F64460CE0D3550BD6658ABD26EDA825859746C10F781354EC1C086161B4
 A808B1BD56 <br>
-r03 _(get private key 3)_
+r03 _(get private key 3)_ <br>
 5E2A0AAD12FF24E638174AE9B17F45078C5C068F08F0479AAE9CB645DFBB4408<br>
 ?02 _(disconnect)_<br>
+
+# Setting a key
+c03 _(clear key 3)_ <br>
+OK <br>
+X031234 _(set private & public key 3)_ <br>
+OK <br>
+p03  _(get public key 3)_ <br>
+0437A4AEF1F8423CA076E4B7D99A8CABFF40DDB8231F2A9F01081F15D7FA65C1BAB96CED90A1B8F9B43A18FC900FF55AF2BE0E94B90A434FCA5B9E22
+6B835024CD <br>
+r03 _(get private key 3)_ <br>
+0000000000000000000000000000000000000000000000000000000000001234<br>
 
 
 
