@@ -38,12 +38,13 @@
 
 * A keystore command is a text line (ASCII) ended by CrLf (Carriage Return, Line Feed) or Lf 
 * The first character is the command identifier (?, c, X, g, p, r, t, v, b)
-* The second and third character is the command index coded in hexadecimal (00=>0, 01=1, 0A=>10, FF=>255)
+* The second and third character is the command index coded in hexadecimal <br>
+-- index: 00=>0, 01=1, 0A=>10, FF=>255 <br>
 -- The keystore supports four keys identfified by index 00, 01, 02, 03 <br>
 * Remaining characters (if any) represent the command payload
 -- For ?01 echo command, the payload is a set of ASCII characters <br>
 -- For other commands the payload is a set of bytes encoded in hexadecimal format <br>
--- For BIP32, only hardened keys are supported. The path is expressed as a list of 32bits values, with themost significant bit set to 1.<br>
+-- For BIP32, only hardened keys are supported. The path is expressed as a list of 32bits values, with th emost significant bit set to 1.<br>
 
 ![keystore wi-fi board](https://github.com/purien/keystore/blob/main/keystore01.jpg)
 
