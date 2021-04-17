@@ -59,7 +59,7 @@ Verify return code: 0 (ok)_<br>
 ## A simple session
 
 ?00             _(get version)_  <br>
-Ethertrust keystore 1.0          <br>
+Ethertrust keystore 1.1          <br>
 ?01abcdef       _(echo abcdef)_  <br>
 abcdef  <br>
 ?02             _(disconnect)_   <br>
@@ -101,6 +101,15 @@ p03  _(get public key 3)_ <br>
 9DEA32146E <br>
 r03 _(get private key 3)_ <br>
 95DC50F1D52AC952B866B8AD9845F9E3EBB9DD8EDF49F8E7CC342469A8DA77C8 <br>
+?02 _(disconnect)_<br>
+
+## Generating BIP32 random secret seed
+c03 _(clear key 3)_ <br>
+OK <br>
+t03  _(gererate tree 3 secret seed)_ <br>
+OK <br>
+v03  _(get tree 3 secret seed)_ <br>
+139CF1FED85772090C9A9AEBECD4F3ABB549B0D5D6858F77D540A9B565A98FF1<br>
 ?02 _(disconnect)_<br>
 
 ## Signing
