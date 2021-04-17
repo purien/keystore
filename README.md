@@ -35,6 +35,15 @@
 * Next version will support PKI
 
 # Keystore commands
+
+* A keystore command is a text line (ASCII) ended by CrLf (Carriage Return, Line Feed) or Lf 
+* The first character is the command identifier (?, c, X, g, p, r, t, v, b)
+* The second and third character is the command index coded in hexadecimal (00=>0, 01=1, 0A=>10, FF=>255)
+-- The keystore supports four keys identfified by index 00, 01, 02, 03
+* Remaining characters (if any)  represent the command payload
+  -- For ?01 echo command, the payload is a set of ASCII characters
+  -- For other commands the payload is a set of bytes encoded in hexadecimal format
+
 ![keystore wi-fi board](https://github.com/purien/keystore/blob/main/keystore01.jpg)
 
 # OPENSSL examples
@@ -112,7 +121,7 @@ v03  _(get tree 3 secret seed)_ <br>
 ?02 _(disconnect)_<br>
 
 ## Generating BIP32 test vector
-see https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
+see https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki <br>
 c03 _(clear key 3)_ <br>
 OK <br>
 t03000102030405060708090a0b0c0d0e0f _(set tree 3 secret seed)_ <br>
