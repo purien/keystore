@@ -45,11 +45,11 @@ openssl s_client  -tls1_3  -connect keystore.dyndns.info:443 -groups P-256 -ciph
 
 ## A simple session
 
-?00             _(get version)_
-Ethertrust keystore 1.0 
-?01abcdef       _echo abcdef_
-abcdef
-?02             _(disconnect)_
+?00             _(get version)_  <br>
+Ethertrust keystore 1.0          <br>
+?01abcdef       _(echo abcdef)_  <br>
+abcdef  <br>
+?02             _(disconnect)_   <br>
 
 
 
