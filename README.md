@@ -9,3 +9,4 @@
 * On the client side, credentials are optionally stored in a Secure Element (access card)
 * Simple and highly secure architecture <br>
 -- Relies on TLS1.3 secure communication and Secure Elements <br>
+***
