@@ -87,6 +87,20 @@ p03  _(get public key 3)_ <br>
 r03 _(get private key 3)_ <br>
 0000000000000000000000000000000000000000000000000000000000001234<br>
 
+# Setting BIP32 seed and computing keys
+c03 _(clear key 3)_ <br>
+OK <br>
+t031234 _(set tree 3 secret seed)_ <br>
+OK <br>
+v03  _(get tree 3 secret seed)_ <br>
+1234
+b0380000001  _(compute hardened  key 1H for BIP tree 3)_ <br>
+p03  _(get public key 3)_ <br>
+0455CB37165F08D5E85D49DA700C083B8D9D7CB33EA7BEF0FE3455F632FE50DE743E4664A488C3D825F872135BF2F139C655B9E212394717D0A9F27E
+9DEA32146E <br>
+r03 _(get private key 3)_ <br>
+95DC50F1D52AC952B866B8AD9845F9E3EBB9DD8EDF49F8E7CC342469A8DA77C8 <br>
+
 
 
 
