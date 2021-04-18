@@ -6,7 +6,7 @@
 -- Secure and tamper proof <br>
 * Blockchain keystore embedded in a tamper resistant server <br>
 -- Fully under the (remote) user (owner) control <br>
-* On the client side, credentials are optionally stored in a Secure Element (access card)
+* On the client side, credentials are optionally stored in a Secure Element (access card) and may use a crypto terminal.
 * Simple and highly secure architecture <br>
 -- Relies on TLS1.3 secure communication and Secure Elements <br>
 
