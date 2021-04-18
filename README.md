@@ -26,6 +26,7 @@
 -- https://tools.ietf.org/html/draft-urien-tls-im-04<br>
 * Short introduction (4mn) to TLS-IM et TLS-SE (Hot RFC lightning Talks, November 2020) <br>
 -- https://www.youtube.com/watch?v=aRQQu_977K8
+![keystore](https://github.com/purien/keystore/blob/main/keystore02.jpg)
 
 # Why TLS1.3
 * State of art for communication security
@@ -35,8 +36,6 @@
 -- Server and client authentication based on PKI or pre-shared-key (PSK)<br>
 * TLS-SE 1.0 works with AES-128-CCM cipher-suite, ECDHE (over SECP256k1), and 32 bytes PSK.
 * Next version will support PKI
-
-![keystore](https://github.com/purien/keystore/blob/main/keystore02.jpg)
 
 # Keystore commands
 * A keystore command is a text line (ASCII) ended by CrLf (Carriage Return, Line Feed) or Lf 
