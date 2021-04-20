@@ -101,7 +101,7 @@ r03 _(get private key 3)_ <br>
 0000000000000000000000000000000000000000000000000000000000001234<br>
 ?02 _(disconnect)_<br>
 
-## Setting BIP32 seed and compute keys
+## Setting BIP32 seed and computing keys
 c03 _(clear key 3)_ <br>
 OK <br>
 t031234 _(set tree 3 secret seed)_ <br>
