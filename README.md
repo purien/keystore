@@ -10,6 +10,10 @@
 * Simple and highly secure architecture <br>
 -- Relies on TLS1.3 secure communication and Secure Elements <br>
 
+# Making an Ethereum transaction with the keystore
+
+See https://github.com/purien/keystore/wiki/Making-an-Ethereum-Transaction-with-the-keystore
+
 # The concept
 * Blockchain keystore hosted in the Internet Trusted keystore running in a secure element 
 -- EAL6 <br>
