@@ -60,10 +60,10 @@ See https://github.com/purien/keystore/wiki/Making-an-Ethereum-Transaction-with-
 
 ## OPENSSL command line
 
-- without server name
+- without server name  <br>
 openssl s_client  -tls1_3  -connect keystore.dyndns.info:443 -groups P-256 -cipher DHE -ciphersuites  TLS_AES_128_CCM_SHA256 -no_ticket -psk 0102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F20
 
-- with server name
+- with server name  <br>
 openssl s_client  -tls1_3  -connect keystore.dyndns.info:443  -servername key1.com -groups P-256 -cipher DHE -ciphersuites  TLS_AES_128_CCM_SHA256 -no_ticket -psk 0102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F20
  
 Upon success your scree should display the following lines: <br><br>
