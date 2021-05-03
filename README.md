@@ -54,6 +54,7 @@ See https://github.com/purien/keystore/wiki/Making-an-Ethereum-Transaction-with-
 * The timeout is 30 seconds, use ?02 for deconnection.
 
 ![keystore wi-fi board](https://github.com/purien/keystore/blob/main/keystore01.jpg)
+![keystore raspberry-pi board](https://github.com/purien/keystore/blob/main/keystore-rasp-pi.jpg)
 
 # OPENSSL examples
 
