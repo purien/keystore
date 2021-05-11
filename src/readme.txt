@@ -3,7 +3,7 @@ For Ubuntu or Raspberry PI
   sudo apt-get update
   sudo apt-get install libpcsclite1 pcscd
   sudo apt-get install libpcsclite-dev libusb-dev
-  sudo apt-get install  pcsc-tools
+  sudo apt-get install pcsc-tools
 
 - Create a directory keystore
 
@@ -16,4 +16,4 @@ For Ubuntu or Raspberry PI
 - To compile the sources execute the command:  
   gcc -o keystore -Wall -O2  ./main.c ./mutuex.c ./pcsc.c ./atr.c ./pcscemulator.c ./grid.c ./serverk.c  ./windowglue.c  -I/usr/include/PCSC -I.  -L/usr/lib -lpcsclite -lpthread
 
-- To run the keystore type ./keystore
+- To run the keystore type ./keystore or ./keystore ./config
