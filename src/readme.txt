@@ -1,3 +1,5 @@
+Keystore reused the RACS concept (and code) adressing grid of secure elements
+
 For Ubuntu or Raspberry PI
 - Install PCSC-LITE
   sudo apt-get update
@@ -10,6 +12,10 @@ For Ubuntu or Raspberry PI
 - Under the directory keystore, create directories ./config and ./trace
 
 - Copy the files config.txt, atr.txt, cardsn.txt, users.txt under ./config
+  atr.txt is not used (relation between ATR and Javacard-AID) because AID is default application
+  cardsn.txt is the relation between CardSN (i.e. ATR historical bytes) and SEID (CardSN->SEID)
+  users.txt  is the relation between TLS ServerName (UserID= TLS-SN) and SEID (SN->SEID)
+  Multiple TLS Server Name can be assoiated a SEID
 
 - Copy the sources files under keystore
 
