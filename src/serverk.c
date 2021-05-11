@@ -177,6 +177,8 @@ int IM_open(int aid,int sid,char * pin);
 int IM_send(int aid,int sid,char *in,int lenin, char*out, int *lenout);
 int Net_Send(int sock, char *buf, int size);
 
+extern char * get_seid(int uid,int index);
+
 int do_serverk_loop(int sock, int sid)
 {
     int  err,len,pt     ;
@@ -197,7 +199,8 @@ int do_serverk_loop(int sock, int sid)
 
 	char sn[128];
 	int uid=0,seid=0,aid=0,n=0;
-	char servername[16];
+	char servername[128];
+	char *SEID=NULL;
 	
      struct sockaddr_in sin;
      char ip[32];
@@ -353,9 +356,14 @@ int do_serverk_loop(int sock, int sid)
 	    if (err >0)
 		{  	// get userid
 			uid = GetUserId(servername);
-			if (uid <0) goto goodbye ;
+			if (uid <0) goto goodbye   ;
+
+            SEID= get_seid(uid,0);
+			if (SEID == NULL) goto goodbye ;
+			
 			// get reader id (aid) and Secure Element ID seid 
-            aid = checkseid(servername,uid,&seid);
+            // aid = checkseid(servername,uid,&seid);
+            aid = checkseid(SEID,uid,&seid);
 			if (aid < 0) goto goodbye ;
 
             err = powerup(aid,sid);

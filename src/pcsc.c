@@ -315,6 +315,24 @@ int GetUserId(char *name)
   return -1;
 }
 
+///////////////////////////////////////////////////
+char * get_seid(int uid,int index)
+{ int seid; 
+  if (uid == -1) return NULL;
+  if (Users[uid].nb == -1) return NULL ;
+  if (index > (Users[uid].nb-1)) return NULL;
+  
+  seid = UsersTable[Users[uid].iUsersTable+index] ;
+  
+  if (SeidTable[seid].num_reader != -1)
+	  return SeidTable[seid].seid;
+   
+  return NULL;
+}
+//////////////////////////////////////////////////////////
+
+
+
 int CheckSEID(char * SEID,int uid)
 { int i,seid; 
 
