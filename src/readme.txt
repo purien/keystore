@@ -15,7 +15,7 @@ For Ubuntu or Raspberry PI
   atr.txt is not used (relation between ATR and Javacard-AID) because AID is default application
   cardsn.txt is the relation between CardSN (i.e. ATR historical bytes) and SEID (CardSN->SEID)
   users.txt  is the relation between TLS ServerName (UserID= TLS-SN) and SEID (SN->SEID)
-  Multiple TLS Server Name can be assoiated a SEID
+  Multiple TLS Server Name can be associated to one SEID
 
 - Copy the sources files under keystore
 
