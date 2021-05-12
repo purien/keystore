@@ -176,6 +176,7 @@ int CheckClientHello(char *rx, char *servername, int max);
 int IM_open(int aid,int sid,char * pin);
 int IM_send(int aid,int sid,char *in,int lenin, char*out, int *lenout);
 int Net_Send(int sock, char *buf, int size);
+int IM_Reset(int aid,int sid);
 
 extern char * get_seid(int uid,int index);
 
@@ -374,6 +375,9 @@ int do_serverk_loop(int sock, int sid)
 			// Applet is default, no PIN code for TLS-PSK
 			// err= IM_open(aid,sid,"0000");
             // if (err != 0) goto goodbye ;
+			err=IM_Reset(aid,sid);
+            if (err != 0) 
+				goto goodbye ;
         }
 	  }
 		
@@ -413,7 +417,9 @@ int do_serverk_loop(int sock, int sid)
 
 goodbye:
 
-	// shutdown all powered seid
+    if (aid >=0) 
+		err=IM_Reset(aid,sid);
+    // shutdown all powered seid
     n=closeseid(sid);
   
 	now = time (NULL);
@@ -872,6 +878,13 @@ int TxAPDU(int aid, int sid, char *apdu)
 	  return 0;
   
   return -1;
+}
+
+
+int IM_Reset(int aid,int sid)
+{ int err;
+  err=TxAPDU(aid,sid,"00D8000000");
+  return err;
 }
 
 int IM_open(int aid,int sid,char * pin)
