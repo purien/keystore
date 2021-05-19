@@ -1,0 +1,10 @@
+// Card_SN (Server Name) is defined by ATR historical bytes
+// SEID (Secure element IDentifier) is identical to SN
+// CARD_SN  SEID
+key1.com key1.com
+key2.com key2.com
+ethertrust ethertrust
+
+
+
+

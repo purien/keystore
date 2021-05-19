@@ -1,0 +1,52 @@
+//////////////////////////////////////////////
+***********Configuration File*****************
+//////////////////////////////////////////////
+
+server_port    0.0.0.0:7777
+
+autostart yes
+
+start_delay  0       (ms)
+
+trace_dir ./trace/   (default ./)
+
+server_timeout 600000     (in ms)
+
+// CN that are not referenced in SEID table (SEID.txt) default access to embedded AID in SE (yes - no)
+// or no SEID.txt file
+
+se_default_access no
+
+// List only authorized SEID (default = no)
+restricted_seid_list yes
+
+
+is_external_grid     no
+
+racs_verbose         yes
+
+secure_element_index no
+
+reader_verbose yes
+
+reader_console yes
+
+system_console yes
+
+close_session_console yes
+close_session_delay   0 (in ms)
+session_console_tile  yes
+
+racs_log  yes
+
+
+
+
+
+
+
+
+
+
+
+
