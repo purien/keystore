@@ -14,6 +14,10 @@
 
 See https://github.com/purien/keystore/wiki/Making-an-Ethereum-Transaction-with-the-keystore
 
+# Demonstration Server for Windows
+
+See https://github.com/purien/keystore/wiki/Windows-Keystore-Demonstration
+
 # The concept
 * Blockchain keystore hosted in the Internet Trusted keystore running in a secure element 
 -- EAL6 <br>
