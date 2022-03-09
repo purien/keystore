@@ -60,6 +60,9 @@ See https://github.com/purien/keystore/wiki/Windows-Keystore-Demonstration
 ![keystore raspberry-pi board](https://github.com/purien/keystore/blob/main/keystore-rasp-pi.jpg)
 ![keystore wi-fi board](https://github.com/purien/keystore/blob/main/keystore01.jpg)
 
+# Personal HSM
+![Personal HSM board](https://github.com/purien/keystore/blob/main/grid_16_s4.jpg)
+
 # OPENSSL examples
 
 ## OPENSSL command line
