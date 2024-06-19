@@ -70,7 +70,7 @@ See https://github.com/purien/keystore/wiki/Windows-Keystore-Demonstration
 - without server name  <br>
 openssl s_client  -tls1_3  -connect server.com:8888 -groups P-256 -cipher DHE -ciphersuites  TLS_AES_128_CCM_SHA256 -no_ticket -psk 0102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F20
 
-- with TLS server name _keyx.com <br>
+- with TLS server name _keyx.com_ <br>
 openssl s_client  -tls1_3  -connect server.com:8888  -servername keyx.com -groups P-256 -cipher DHE -ciphersuites  TLS_AES_128_CCM_SHA256 -no_ticket -psk 0102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F20
  
 Upon success your scree should display the following lines: <br><br>
@@ -161,19 +161,19 @@ s03abcd _(sign with key 3)_ <br>
 30440220604F3520C7112BA934B34D25DB03DD66851C84017A0216FE1DC876A4ED4F6C33022070B437A956D5D9D7B7EAEBDC122E52DC347218DA4884
 EF920AA44940D48BD92F <br>
 
-## Writting _Write record#0 64 characters (32 hexa bytes)
+## Writting _Write record#0 64 characters (32 hexa bytes)_
 Z00010203040506070809101112131415161718182021223242526272829303132 <br>
 OK <br>
 
-## Writting  _Write record#31 64 characters (32 hexa bytes)
+## Writting  _Write record#31 64 characters (32 hexa bytes)_
 Z1F010203040506070809101112131415161718182021223242526272829303132 <br>
 OK <br>
 
-## Reading _read record#0
+## Reading _read record#0_
 I00 <br>
 010203040506070809101112131415161718182021223242526272829303132 <br>
 
-##rrading _read record#31
+##rrading _read record#31_
 I1F <br>
 010203040506070809101112131415161718182021223242526272829303132 <br>
 
