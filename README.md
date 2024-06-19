@@ -161,21 +161,23 @@ s03abcd _(sign with key 3)_ <br>
 30440220604F3520C7112BA934B34D25DB03DD66851C84017A0216FE1DC876A4ED4F6C33022070B437A956D5D9D7B7EAEBDC122E52DC347218DA4884
 EF920AA44940D48BD92F <br>
 
-## Writting _Write record#0 64 characters (32 hexa bytes)_
+## Writting
+ _Write record#0 64 characters (32 hexa bytes)_<br>
 Z00010203040506070809101112131415161718182021223242526272829303132 <br>
 OK <br>
-
-## Writting  _Write record#31 64 characters (32 hexa bytes)_
+<br>  
+_Write record#31 64 characters (32 hexa bytes)_ <br>
 Z1F010203040506070809101112131415161718182021223242526272829303132 <br>
 OK <br>
 
-## Reading _read record#0_
+## Reading
+_read record#0_<br>
 I00 <br>
 010203040506070809101112131415161718182021223242526272829303132 <br>
-
-##rrading _read record#31_
+_read record#31_<br>
 I1F <br>
 010203040506070809101112131415161718182021223242526272829303132 <br>
+<br>
 
 ## Disconnect
 ?02 _(disconnect)_<br>
